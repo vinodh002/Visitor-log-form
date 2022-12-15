@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistor Log</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Complete code wrapped on this -->
+    <div class="vistor-container">
+
+
+        <!-- Header section contains name and checkouts timings -->
+        <header>
+            <h1>Visitor Logs</h1>
+            <div class="checkouts">
+
+                <div class="in">
+                    <input type="checkbox">In time
+                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                        min="2000-06-07T00:00" max="2034-06-14T00:00" />
+                    </input>
+
+                </div>
+
+                <div class="out">
+                    <input type="checkbox">Out time
+                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                        min="2018-06-07T00:00" max="2018-06-14T00:00" />
+                    </input>
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Main content section contains 2 divs (left / aside)-->
+        <div class="content">
+
+            <!-- left-content contained 2 forms  -->
+            <div class="left-content">
+
+                <!-- first form of visitors details -->
+                <div class="visitor-details">
+                    <form class="visitor-detail-form">
+                        <fieldset>
+                            <legend>Visitor-details</legend>
+                            <div class="form-inputs">
+                                <div class="input-fields">
+                                    <label for="name">Vistors name:</label>
+                                    <input type="text" id="name" />
+                                </div>
+                                <div class="input-fields">
+                                    <label for="from">From Company:</label>
+                                    <input type="text" id="from" />
+                                </div>
+                                <div class="input-fields">
+                                    <label for="address">Company Address:</label>
+                                    <textarea cols="30" rows="6" id="address" title="as"></textarea>
+                                </div>
+                                <div class="input-fields">
+                                    <label for="num">Phone number:</label>
+                                    <!-- <input type="number" id="num" placeholder="wdsfsdf"> -->
+                                    <input type="number" id="num">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="mail">Email:</label>
+                                    <input type="email" id="mail">
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                    </form>
+                </div>
+
+                <!-- second form of To meet -->
+                <div class="to-meet">
+                    <form class="to-meet-form">
+                        <fieldset>
+                            <legend>To Meet:</legend>
+                            <div class="form-inputs">
+                                <div class="input-fields">
+                                    <label for="e-name">Employees name:</label>
+                                    <input type="text" id="e-name" />
+                                </div>
+                                <div class="input-fields">
+                                    <label>Purpose :</label>
+                                    <select>
+                                        <option value="a" disabled>aaaaaaaa</option>
+                                    </select>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Company :</label>
+                                    <select>
+                                        <option value="a" disabled>aaaaaaaa</option>
+                                    </select>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Department :</label>
+                                    <select>
+                                        <option value="a" disabled>aaaaaaaa</option>
+                                    </select>
+                                </div>
+
+                        </fieldset>
+                    </form>
+
+
+                </div>
+            </div>
+
+
+            <!-- aside form  -->
+            <div class="aside">
+
+                <!-- photo and fingerprint -->
+                <div class="bio-metrics">
+                    <div class="user">
+                        <div class="photo-title">Photo</div>
+                        <div class="user-img">
+                            <video id="player" controls></video>
+                            <!-- <button id="capture">Capture</button> -->
+                            <canvas id="snapshot" width=150 height=150></canvas>
+                            <!-- <img src="" alt="pic"> -->
+                        </div>
+                        <div class="btns">
+                            <button id="capture">Capture</button>
+                            <button>Clear</button>
+                        </div>
+                    </div>
+                    <div class="fingerprint">
+                        <div class="fp-title">Finger Print</div>
+                        <div class="fp-img">
+                            <img src="" alt="fingerprint">
+                        </div>
+                        <div class="btns">
+                            <button>Capture</button>
+                            <button>Clear</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- feedback text area -->
+                <div class="feedback">
+                    <div class="remarks">
+                        <div class="remarks-div">
+                            <div class="remarks-title">Remarks</div>
+                            <textarea cols="50" rows="5" id="" title="as"></textarea>
+                        </div>
+                    </div>
+                    <div class="badge-remarks">
+                        <div>
+                            <div class="badge-title">Badge Remarks</div>
+                            <textarea cols="50" rows="5" id="address" title="as"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <footer>
+
+            <div class="left">
+                <button type="submit" class="footer-btn">Generate badge</button>
+            </div>
+            <div class="right">
+                <button type="submit" class="footer-btn">Update</button>
+                <button type="submit" class="footer-btn">Close</button>
+            </div>
+
+        </footer>
+
+        <!-- <input type="file" id="mypic" accept="image/*"> -->
+
+
+
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

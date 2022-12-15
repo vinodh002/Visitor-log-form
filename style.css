@@ -1,0 +1,162 @@
+.vistor-container {
+  height: 100vh;
+}
+
+/* header styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: rgb(128, 128, 235);
+  align-items: center;
+  padding: 20px 40px;
+  min-width: 100vw;
+}
+
+.checkouts {
+  width: 500px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.in,
+.out {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* -------------------------------- */
+
+/* content styles */
+.content {
+  padding: 20px;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-between;
+}
+
+legend {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.visitor-detail-form,
+.to-meet-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+label {
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+
+.form-inputs {
+  padding: 20px;
+}
+
+.form-inputs .input-fields {
+  display: flex;
+  margin: 6px 0;
+}
+
+.form-inputs .input-fields label {
+  width: 30%;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.form-inputs input {
+  width: 30%;
+}
+
+/* Aside part css */
+.aside {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.bio-metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+video{
+  width: 150px;
+  height: 150px;
+}
+
+.user,
+.fingerprint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo-title,
+.fp-title {
+  font-size: 2rem;
+}
+
+.user-img,
+.fp-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.btns {
+  width: 100%;
+}
+
+.btns button {
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+/* ------------------------------------------ */
+
+/* footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: rgb(128, 128, 235);
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.footer-btn {
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+}
+
+
+/* -------------------- */
